@@ -16,6 +16,11 @@ public class Question : MonoBehaviour
         RandomNumbers();
     }
 
+    void Update()
+    {
+        RandomNumbers();
+    }
+
     void RandomNumbers()
     {
         int r = Random.Range(0, 3); // 0 - 2
@@ -65,7 +70,7 @@ public class Question : MonoBehaviour
                 alt3 = Random.Range(1, 10); // 1 - 9
             }
 
-            while (alt2 == result || alt3 == result)
+            while (alt2 == result || alt3 == result || alt2 == alt3)
             {
                 if (LevelSelectManager.calc == "x")
                 {
@@ -94,7 +99,7 @@ public class Question : MonoBehaviour
                 alt3 = Random.Range(1, 10); // 1 - 9
             }
 
-            while (alt1 == result || alt3 == result)
+            while (alt1 == result || alt3 == result || alt1 == alt3)
             {
                 if (LevelSelectManager.calc == "x")
                 {
@@ -123,7 +128,7 @@ public class Question : MonoBehaviour
                 alt2 = Random.Range(1, 10); // 1 - 9
             }
 
-            while (alt1 == result || alt2 == result)
+            while (alt1 == result || alt2 == result || alt1 == alt2)
             {
                 if (LevelSelectManager.calc == "x")
                 {
