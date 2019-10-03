@@ -16,11 +16,6 @@ public class Question : MonoBehaviour
         RandomNumbers();
     }
 
-    void Update()
-    {
-        RandomNumbers();
-    }
-
     void RandomNumbers()
     {
         int r = Random.Range(0, 3); // 0 - 2
